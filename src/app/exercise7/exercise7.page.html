@@ -13,9 +13,8 @@
 
   <ion-list lines="full">
     <ion-item *ngFor="let check of data" button>
-      <ion-label>
-        <h2>{{ check.name }}</h2>
-      </ion-label>
+      <ion-label><h2 [style.color]="check.textColor">{{ check.name }}</h2></ion-label>
+
       <ion-checkbox [(ngModel)]="check.selected" [color]="check.color" (ionChange)="checkbox(check.name)"></ion-checkbox>
     </ion-item>
   </ion-list>
@@ -26,6 +25,9 @@
     <ion-button expand="full" [href]="url">Go to website</ion-button>
   </div>
 </ion-content>
+
+<ion-button id="home-button" routerLink="/"><ion-icon name="home-outline"></ion-icon> Home</ion-button>
+
 
 <style>
   .image-container {

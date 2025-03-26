@@ -1,35 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-exercise7',
-  templateUrl: './exercise7.page.html',
-  styleUrls: ['./exercise7.page.scss'],
+  selector: 'app-exercise8',
+  templateUrl: './exercise8.page.html',
+  styleUrls: ['./exercise8.page.scss'],
   standalone: false,
 })
-export class Exercise7Page implements OnInit {
+export class Exercise8Page implements OnInit {
+
   constructor() { }
   ngOnInit() { }
 
   img:string = '/assets/star.png';
   url:string = '';
-  
+
   data = [
     {
       name: 'Classroom',
       color: 'warning',
-      textColor: 'orange',
       selected: false,
     },
     {
       name: 'Google',
       color: 'success',
-      textColor: 'green',
       selected: false,
     },
     {
       name: 'Facebook',
       color: 'tertiary',
-      textColor: 'blue',
       selected: false,
     }
   ];
